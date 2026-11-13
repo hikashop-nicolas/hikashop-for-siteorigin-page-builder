@@ -1,0 +1,49 @@
+.hikashop-so-picker-list {
+	margin: 0 0 8px;
+	padding: 0;
+	list-style: none;
+}
+.hikashop-so-picker-list li,
+.hikashop-so-picker-results li {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 4px 6px;
+	border: 1px solid #dcdcde;
+	border-radius: 3px;
+	margin-bottom: 4px;
+	background: #fff;
+	font-size: 13px;
+}
+.hikashop-so-picker-list li span {
+	flex: 1;
+}
+.hikashop-so-picker-list button {
+	border: 0;
+	background: none;
+	cursor: pointer;
+	padding: 0 4px;
+	font-size: 14px;
+	line-height: 1;
+}
+.hikashop-so-picker-results {
+	margin: 4px 0 0;
+	padding: 0;
+	list-style: none;
+	max-height: 220px;
+	overflow-y: auto;
+}
+.hikashop-so-picker-results li {
+	cursor: pointer;
+}
+.hikashop-so-picker-results li:hover,
+.hikashop-so-picker-results li:focus {
+	background: #f0f6fc;
+}
+.hikashop-so-form .hikashop-so-field {
+	margin: 1em 0;
+}
+.hikashop-so-form .hikashop-so-field label {
+	display: block;
+	margin-bottom: 2px;
+}
