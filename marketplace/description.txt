@@ -1,0 +1,51 @@
+<div class="hikashop_product_content">
+<div id="product_features">
+	<p><b>HikaShop for SiteOrigin Page Builder</b> is a free WordPress plugin that lets you design your HikaShop store with <a href="https://siteorigin.com/page-builder/" target="_blank" rel="noopener">SiteOrigin Page Builder</a>. Product listings, category listings and every part of the product page become widgets in a HikaShop tab of the Add Widget dialog, next to HikaShop's own cart, wishlist, currency switcher and filter widgets, and your product pages can be shown with a layout you design with SiteOrigin Page Builder. It needs nothing else: no SiteOrigin Widgets Bundle, no paid add-on.</p>
+
+	<span class="blue_title">Features</span>
+	<ul>
+		<li><b>Products</b> widget: the products of a category (with or without its subcategories), products chosen by hand in the order you give, the products on sale, the products the visitor viewed last, or the products related to the product being viewed. You choose the order, the number of products, the columns, the product layout, and whether to show the price, the add to cart button, the quantity field, the wishlist button, the rating and the badges.</li>
+		<li>A product picker that searches your catalog by name, code or id, for the products chosen by hand.</li>
+		<li><b>Categories</b> widget: the subcategories of a category, with their number of products, the empty ones hidden if you want.</li>
+		<li>Fourteen product page widgets: title, images, price, add to cart, description, variants, options, custom fields, specifications, dimensions, bundled products, files, rating and sharing. Place each one where you want in your product page layout.</li>
+		<li>Product page layouts, made in Settings &gt; HikaShop for SiteOrigin Page Builder and designed with SiteOrigin Page Builder; one of them is picked for the whole shop. In the Live Editor, the latest product of your shop stands in, so you see real content while you design.</li>
+		<li>The variant selectors, the add to cart, the image gallery and the links to a given variant work as on HikaShop's own product page. Unpublished products and products hidden from the visitor's user group or language keep HikaShop's own answer.</li>
+		<li>HikaShop's own <b>Cart</b>, <b>Wishlist</b>, <b>Currency switcher</b> and <b>Filters</b> widgets in the same tab, each with its own full HikaShop settings; a duplicated widget gets a copy of them.</li>
+		<li>The style settings of SiteOrigin Page Builder (colors, spacing, borders, CSS class) on every widget, on top of HikaShop's own CSS.</li>
+		<li>Plain WordPress widgets: they also work in the widget areas of your theme.</li>
+		<li>Nothing of the shop is redone: prices, taxes, discounts, stock, access rights, the cart and the layout overrides of your theme apply as on HikaShop's own pages.</li>
+		<li>Open source (GPL), on <a href="https://github.com/hikashop-nicolas/hikashop-for-siteorigin-page-builder" target="_blank" rel="noopener">GitHub</a>.</li>
+	</ul>
+
+	<span class="blue_title">Preview</span>
+	<a href="/images/marketplace/so_listing.jpg" rel="shadowbox[hikashop]"><img src="/images/marketplace/so_listing.jpg" alt="A HikaShop product listing and its settings in SiteOrigin Page Builder" style="max-width:100%; margin:10px 0; cursor:zoom-in;" /></a>
+	<a href="/images/marketplace/so_picker.jpg" rel="shadowbox[hikashop]"><img src="/images/marketplace/so_picker.jpg" alt="Products chosen by hand, with a search of the HikaShop catalog" style="max-width:100%; margin:10px 0; cursor:zoom-in;" /></a>
+	<a href="/images/marketplace/so_layout.jpg" rel="shadowbox[hikashop]"><img src="/images/marketplace/so_layout.jpg" alt="A product page layout in the Live Editor of SiteOrigin Page Builder, with the HikaShop widgets" style="max-width:100%; margin:10px 0; cursor:zoom-in;" /></a>
+	<a href="/images/marketplace/so_product.jpg" rel="shadowbox[hikashop]"><img src="/images/marketplace/so_product.jpg" alt="The product page on the site, shown with the SiteOrigin layout" style="max-width:100%; margin:10px 0; cursor:zoom-in;" /></a>
+	<a href="/images/marketplace/so_shop.jpg" rel="shadowbox[hikashop]"><img src="/images/marketplace/so_shop.jpg" alt="A shop page built with the product and category listing widgets" style="max-width:100%; margin:10px 0; cursor:zoom-in;" /></a>
+
+	<span class="blue_title">How it works</span>
+	<ul>
+		<li>1. Install and activate SiteOrigin Page Builder and HikaShop, then this plugin.</li>
+		<li>2. Edit a page with SiteOrigin Page Builder and click Add Widget: the widgets are in the HikaShop tab.</li>
+		<li>3. For the product pages, add a layout in Settings &gt; HikaShop for SiteOrigin Page Builder, place the product widgets in it, publish it, and choose it there.</li>
+	</ul>
+</div>
+<div id="product_use"><span class="blue_title">Use</span>
+	<ul>
+		<li>Free plugin, for every HikaShop edition, Starter included (the Filters widget needs HikaShop Business, the edition with the filters)</li>
+		<li>Requires HikaShop 6.8.2 minimum, a package downloaded since 13 November 2026</li>
+		<li>Requires SiteOrigin Page Builder 2.29 minimum</li>
+		<li>Compatible with WordPress 6.8 minimum and PHP 7.4 minimum</li>
+		<li>WordPress only (SiteOrigin Page Builder does not exist on Joomla)</li>
+		<li>No time limit</li>
+		<li>Unlimited usage</li>
+	</ul>
+</div>
+<div id="changelog"><span class="blue_title">Changelog</span>
+	<p class="version">1.0.0 on the 13th of November 2026</p>
+	<ul>
+		<li>First release: product and category listings, the product page widgets and the product page layouts, with HikaShop's cart, wishlist, currency switcher and filter widgets in the same tab.</li>
+	</ul>
+</div>
+</div>

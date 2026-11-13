@@ -1,4 +1,8 @@
 <p align="center">
+  <img src=".wordpress-org/banner-1544x500.png" alt="HikaShop for SiteOrigin Page Builder" width="100%">
+</p>
+
+<p align="center">
   <a href="https://github.com/hikashop-nicolas/hikashop-for-siteorigin-page-builder/actions/workflows/ci.yml"><img src="https://github.com/hikashop-nicolas/hikashop-for-siteorigin-page-builder/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/WordPress-6.8%2B-21759b" alt="WordPress 6.8+">
   <img src="https://img.shields.io/badge/PHP-7.4%2B-777bb4" alt="PHP 7.4+">
@@ -11,6 +15,8 @@
 Design a [HikaShop](https://www.hikashop.com) store with [SiteOrigin Page Builder](https://siteorigin.com/page-builder/). Product listings, category listings and every part of the product page become widgets in a HikaShop tab of the Add Widget dialog, next to HikaShop's own cart, wishlist, currency and filter widgets, and HikaShop product pages can be shown with a SiteOrigin layout.
 
 Every widget is a plain WordPress widget: no SiteOrigin Widgets Bundle needed, and the widgets also work in widget areas.
+
+![A product listing and its settings in SiteOrigin Page Builder](.wordpress-org/screenshot-1.png)
 
 ## What you get
 
@@ -27,13 +33,23 @@ SiteOrigin Page Builder's own style settings (colors, spacing, borders, CSS clas
 
 The product picker searches the HikaShop catalog by name, code or id, and keeps the order you give.
 
+![Products chosen by hand, with a search of the HikaShop catalog](.wordpress-org/screenshot-2.png)
+
 ### Product pages designed with SiteOrigin Page Builder
 
 Free SiteOrigin Page Builder has no saved templates, so the plugin adds its own: in *Settings > HikaShop for SiteOrigin Page Builder*, add a layout, build it with the product widgets, publish it and pick it as the product page layout. Every HikaShop product page is then shown with it. In the Live Editor the latest product of the shop stands in, so you see real content while you design.
 
+![A product page layout in the Live Editor](.wordpress-org/screenshot-3.png)
+
 A layout's own address answers 404 to anyone who cannot edit it, and is never indexed.
 
 The variant selectors, the add to cart button, the image gallery and a link to a given variant (`?hikashop_char=`) behave as on HikaShop's own product page; unpublished products, products hidden from the visitor's user group or language still get HikaShop's own answer.
+
+![The product page on the site](.wordpress-org/screenshot-4.png)
+
+### A whole shop page
+
+![A shop page built with the listing widgets](.wordpress-org/screenshot-5.png)
 
 ## Requirements
 
@@ -52,6 +68,8 @@ If a requirement is missing, the plugin stays inactive and says which one in the
 2. Install HikaShop for SiteOrigin Page Builder from *Plugins > Add New* (once it is on WordPress.org), or upload the zip of the [latest release](https://github.com/hikashop-nicolas/hikashop-for-siteorigin-page-builder/releases).
 3. Edit a page with SiteOrigin Page Builder and click *Add Widget*: the widgets are in the HikaShop tab.
 4. For the product pages, add a layout in *Settings > HikaShop for SiteOrigin Page Builder*, design it and choose it there.
+
+![The product page layout setting](.wordpress-org/screenshot-6.png)
 
 ## How it works
 
@@ -79,6 +97,8 @@ includes/class-layouts.php                 layout post type, product page layout
 includes/class-ajax.php                    catalog search of the product picker
 includes/widgets/                          the widgets
 assets/                                    form script and CSS, frontend CSS
+.wordpress-org/                            WordPress.org icon, banners and screenshots
+marketplace/                               HikaShop marketplace texts and pictures (not in the zip)
 ```
 
 The listing, render and ajax classes are the ones of [HikaShop for Elementor](https://github.com/hikashop-nicolas/hikashop-for-elementor) and [HikaShop for Beaver Builder](https://github.com/hikashop-nicolas/hikashop-for-beaver-builder), under their own namespace, with the same file and method names: port a fix to all three.
@@ -89,6 +109,8 @@ CI lints the PHP on 7.4, 8.1 and 8.4 and runs [Plugin Check](https://wordpress.o
 
 1. Bump `Version` in `hikashop-for-siteorigin-page-builder.php`, `HIKASHOP_SO_VERSION`, `Stable tag` in `readme.txt`, and add the changelog entry to `readme.txt`.
 2. Tag the commit with the version (`1.0.1`) and push the tag. The deploy workflow checks the versions match, runs Plugin Check, creates the GitHub release with the zip, and commits the release and the `.wordpress-org/` assets to the WordPress.org SVN.
+
+The [HikaShop marketplace](https://www.hikashop.com/marketplace) downloads the zip of the latest GitHub release, so it follows each release without anything to do.
 
 The SVN credentials are the `SVN_USERNAME` and `SVN_PASSWORD` repository secrets; without them the workflow only makes the GitHub release. To send a version already released on GitHub to WordPress.org later, run the deploy workflow by hand on its tag.
 
