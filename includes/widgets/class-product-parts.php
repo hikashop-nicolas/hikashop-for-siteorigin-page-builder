@@ -26,9 +26,9 @@ trait Block_Switches {
 			$fields[ $name ] = array(
 				'type'    => 'select',
 				'label'   => $label,
-				'default' => 'inherit',
+				'default' => '',
 				'options' => array(
-					'inherit' => __( 'Inherit from HikaShop', 'hikashop-for-siteorigin-page-builder' ),
+					''        => __( 'Inherit from HikaShop', 'hikashop-for-siteorigin-page-builder' ),
 					'show'    => __( 'Show', 'hikashop-for-siteorigin-page-builder' ),
 					'hide'    => __( 'Hide', 'hikashop-for-siteorigin-page-builder' ),
 				),
@@ -47,7 +47,7 @@ trait Block_Switches {
 	protected function block_switches( $settings, $names ) {
 		$attributes = array();
 		foreach ( $names as $name ) {
-			$value = $settings[ $name ] ?? 'inherit';
+			$value = $settings[ $name ] ?? '';
 			if ( in_array( $value, array( 'show', 'hide' ), true ) ) {
 				$attributes[ $name ] = $value;
 			}
