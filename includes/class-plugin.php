@@ -234,8 +234,30 @@ final class Plugin {
 	 * HikaShop's CSS and JavaScript in SiteOrigin's previews.
 	 */
 	public static function preview_assets() {
-		if ( Render::is_editor() ) {
-			Render::enqueue_shop_assets();
+		if ( ! Render::is_editor() ) {
+			return;
 		}
+		Render::enqueue_shop_assets();
+		if ( Render::is_page_preview() ) {
+			// HikaShop chose its backend stylesheets when it loaded for this admin request; the page needs the site ones
+			$css = function_exists( 'hikashop_config' ) ? sanitize_key( (string) hikashop_config()->get( 'css_frontend', 'default' ) ) : 'default';
+			if ( '' !== $css && defined( 'HIKASHOP_CSS' ) ) {
+				wp_enqueue_style( 'hikashop-so-frontend-' . $css, HIKASHOP_CSS . 'frontend_' . $css . '.css', array(), HIKASHOP_SO_VERSION );
+			}
+			add_filter( 'style_loader_tag', array( __CLASS__, 'drop_backend_styles' ), 10, 3 );
+		}
+	}
+
+	/**
+	 * Leaves HikaShop's backend stylesheets out of the Live Editor preview.
+	 *
+	 * @param string $tag    Link tag.
+	 * @param string $handle Style handle.
+	 * @param string $href   Stylesheet URL.
+	 * @return string
+	 */
+	public static function drop_backend_styles( $tag, $handle, $href ) {
+		unset( $handle );
+		return preg_match( '#/media/css/backend_[a-z0-9_-]+\.css#i', (string) $href ) ? '' : $tag;
 	}
 }
