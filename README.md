@@ -58,7 +58,7 @@ The variant selectors, the add to cart button, the image gallery and a link to a
 | WordPress | 6.8 or newer |
 | PHP | 7.4 or newer |
 | SiteOrigin Page Builder | 2.29 or newer |
-| HikaShop | 6.8.2 or newer on WordPress, a package downloaded since 13 November 2026 (Starter, the free edition, works: [download it](https://www.hikashop.com/download)) |
+| HikaShop | 6.8.2 or newer on WordPress, a package downloaded since 16 November 2026 (Starter, the free edition, works: [download it](https://www.hikashop.com/download)) |
 
 If a requirement is missing, the plugin stays inactive and says which one in the admin.
 
