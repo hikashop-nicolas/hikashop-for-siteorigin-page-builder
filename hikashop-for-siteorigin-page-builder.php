@@ -3,7 +3,7 @@
  * Plugin Name:       HikaShop for SiteOrigin Page Builder
  * Plugin URI:        https://github.com/hikashop-nicolas/hikashop-for-siteorigin-page-builder
  * Description:       HikaShop product listings, product page parts, cart and filters as SiteOrigin Page Builder widgets, and HikaShop product pages designed with SiteOrigin Page Builder.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 6.8
  * Requires PHP:      7.4
  * Requires Plugins:  siteorigin-panels
@@ -18,7 +18,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'HIKASHOP_SO_VERSION', '1.0.0' );
+define( 'HIKASHOP_SO_VERSION', '1.0.1' );
 define( 'HIKASHOP_SO_FILE', __FILE__ );
 define( 'HIKASHOP_SO_DIR', plugin_dir_path( __FILE__ ) );
 define( 'HIKASHOP_SO_URL', plugin_dir_url( __FILE__ ) );

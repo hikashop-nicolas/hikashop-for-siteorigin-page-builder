@@ -43,6 +43,10 @@
 	</ul>
 </div>
 <div id="changelog"><span class="blue_title">Changelog</span>
+	<p class="version">1.0.1 on the 16th of November 2026</p>
+	<ul>
+		<li>The scripts and styles of the HikaShop layouts shown in the widgets are loaded by HikaShop itself. This needs a HikaShop 6.8.2 package downloaded since 16 November 2026; with an older one, the widgets show without those scripts.</li>
+	</ul>
 	<p class="version">1.0.0 on the 13th of November 2026</p>
 	<ul>
 		<li>First release: product and category listings, the product page widgets and the product page layouts, with HikaShop's cart, wishlist, currency switcher and filter widgets in the same tab.</li>

@@ -4,7 +4,7 @@ Tags: hikashop, siteorigin, page builder, ecommerce, shop
 Requires at least: 6.8
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,9 @@ Yes, with HikaShop's layout overrides: copy the HikaShop layout file into the hi
 6. The product page layout setting.
 
 == Changelog ==
+
+= 1.0.1 =
+* The scripts and styles of the HikaShop layouts shown in the widgets are loaded by HikaShop itself. This needs a HikaShop 6.8.2 package downloaded since 16 November 2026; with an older one, the widgets show without those scripts.
 
 = 1.0.0 =
 * First release: product and category listings, the product page parts and the product page layout, with HikaShop's cart, wishlist, currency and filter widgets in the same tab.
