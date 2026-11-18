@@ -43,4 +43,5 @@ jobs:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
           SLUG: hikashop-for-siteorigin-page-builder
+          BUILD_DIR: build/hikashop-for-siteorigin-page-builder
           ASSETS_DIR: .wordpress-org
