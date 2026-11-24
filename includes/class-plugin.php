@@ -83,11 +83,15 @@ final class Plugin {
 		if ( ! current_user_can( 'activate_plugins' ) ) {
 			return;
 		}
+		$screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
+		if ( ! $screen || 'plugins' !== $screen->base ) {
+			return;
+		}
 
 		if ( ! self::hikashop_ready() ) {
 			$message = sprintf(
 				/* translators: 1: minimum HikaShop version, 2: link to the HikaShop download page */
-				__( 'HikaShop for SiteOrigin Page Builder needs HikaShop %1$s or newer (a package downloaded since 12 November 2026), installed and active. HikaShop Starter is free: %2$s', 'hikashop-for-siteorigin-page-builder' ),
+				__( 'HikaShop for SiteOrigin Page Builder needs HikaShop %1$s or newer (a package downloaded since 16 November 2026), installed and active. HikaShop Starter is free: %2$s', 'hikashop-for-siteorigin-page-builder' ),
 				self::MIN_HIKASHOP,
 				'<a href="https://www.hikashop.com/download" target="_blank" rel="noopener noreferrer">' . esc_html__( 'download HikaShop', 'hikashop-for-siteorigin-page-builder' ) . '</a>'
 			);
